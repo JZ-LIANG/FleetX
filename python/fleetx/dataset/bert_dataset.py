@@ -46,7 +46,7 @@ def load_bert_dataset(data_dir,
             batch_size=batch_size,
             in_tokens=in_tokens,
             max_seq_len=max_seq_len,
-            shuffle_files=True)
+            shuffle_files=False)
     elif lang == 'ch':
         data_reader = DataReader(
             data_dir=data_dir,
